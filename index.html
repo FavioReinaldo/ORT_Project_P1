@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--       ********** PANTALLA DE REGISTRO **********       -->
+
+    <div id="dRegistro">
+        <h1>Registro de usuario</h1>
+        <input type="text" placeholder="Nombre" name="" id="txtNombreRegistro"><br>
+        <input type="text" placeholder="Usuario" name="" id="txtUsuarioRegistro"><br>
+        <input type="text" placeholder="Contraseña" name="" id="txtContraseñaRegistro"><br><br>
+        Si usted es un Alumno, seleccione a su Docente:<br>
+        (Si es Docente, no seleccione ninguna opcion)<br><br>
+        <select name="Seleccionar docente" id="selectRegistro"></select><br><br>
+        <input type="button" value="Registrarse" id="btnRegistro"><br><br><br>
+        <div id="dSalidaRegistro"></div>
+
+        Ya tenes usuario?
+        <input type="button" value="Iniciar sesion" id="btnlogin">
+
+    </div>
+
+    <!--       ********** PANTALLA DE INICIO DE SESION **********       -->
+
+    <div hidden id="dInicioSesion">
+        <h1>Inicio de sesion</h1>
+        <input type="text" placeholder="Usuario" name="" id="txtUsuarioInicioSesion"><br>
+        <input type="text" placeholder="Contraseña" name="" id="txtContraseñaInicioSesion"><br>
+        <input type="button" value="Iniciar sesion" id="btnInicioSesion"><br>
+        <div id="dSalidaInicioSesion"></div>
+
+        No tenes usuario?
+        <input type="button" value="Registrarse" id="btnVolverARegistro">
+
+    </div> <br><br><br>
+
+    <!--       ********** PANTALLA DE CERRAR SESION **********       -->
+
+    <div hidden id="dCerrarSesion">
+        <input type="button" value="Cerrar sesion" id="btnCerrarSesion"><br>
+    </div>
+
+    <!--       ********** PANTALLA PRINCIPAL DEL PROFESOR **********       -->
+
+    <div hidden id="dPantallaDocente">
+
+        <h1>Pantalla principal Docente</h1>
+
+        <h2>Asignar nivel a sus alumnos</h2>
+
+        <input type="button" value="Mostrar Alumnos" id="btnMostrarAlumnos"><br><br>
+        <div id="dAsignarNivel"></div><br><br>
+
+        <h2>Plantear ejercicios</h2>
+
+        <input type="text" placeholder="Titulo de la ejercicio" id="txtTitulo"><br>
+        <input type="text" placeholder="Descripcion de la ejercicio" id="txtDescripcion"><br>
+        <input type="text" placeholder="Imagen de la ejercicio" id="txtImagen">
+        <input type="file" id="fileImagen" hidden="true" accept="image/*">
+        <input type="button" value="Buscar imagen" id="btnImagen"> <br>
+        Seleccionar Nivel del Ejercicio:<br>
+        <select name="Seleccionar nivel de Ejercicio" id="selectNivelEjercicio">
+            <option value="Inicial">Inicial</option>
+            <option value="Intermedio">Intermedio</option>
+            <option value="Avanzado">Avanzado</option>
+        </select><br>
+        <input type="button" value="Agregar Ejercicio" id="btnAgregarEjercicio"><br>
+        <div id="divStatus"></div>
+        <div id="divEjercicios"></div>
+
+        <h2>Ver Ejercicios Resueltos por Alumnos</h2>
+
+        <input type="button" value="Ver Ejercicios" id="btnVerEjercicios"><br><br>
+        <div id="divEjerciciosResueltos"></div>
+
+        <h2>Visualizar Informacion Estadistica</h2>
+
+        Seleccione un Alumno para ver cuantos ejercicios entrego:<br>
+        <select name="Seleccionar alumno" id="selectInfoEstadisticaDocente"></select><br><br><br>
+        <input type="button" value="Ver Informacion Estadistica" id="btnVerInformacionEstadisticaDocente"><br><br>
+        <div id="dVerInformacionEstadisticaDocente"></div><br><br>
+        
+    </div>
+
+    <!--       ********** PANTALLA PRINCIPAL DEL ALUMNO **********       -->
+
+    <div hidden id="dPantallaAlumno">
+
+        <h1>Pantalla principal Alumno</h1>
+
+        <h2>Ver todos los Ejercicios para su nivel</h2>
+
+        <input type="button" value="Ver ejercicios" id="btnMostrarEjercicios"><br><br>
+        <input type="text" placeholder="Buscador" id="txtBusquedaEjercicio"><br>
+        <input type="button" value="Buscar ejercicios" id="btnBusquedaEjercicio"><br><br>
+        <div id="dVerEjercicios"></div><br><br>
+
+        <h2>Ver todos los ejercicios resueltos</h2>
+
+        <input type="button" value="Ver ejercicios resueltos" id="btnMostrarEjerciciosResueltos"><br><br>
+        <div id="dVerEjerciciosResueltos"></div><br><br>
+
+        <h2>Visualizar Informacion Estadistica</h2>
+
+        <input type="button" value="Ver Informacion Estadistica" id="btnVerInformacionEstadisticaAlumno"><br><br>
+        <div id="dVerInformacionEstadisticaAlumno"></div><br><br>
+
+    </div>
+</body>
+
+<script src="js/objetos.js"></script>
+<script src="js/funciones.js"></script>
+<script src="js/codigo.js"></script>
+
+</html>

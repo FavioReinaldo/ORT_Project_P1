@@ -4,4 +4,4 @@ This is a "Programming 1" final project from first semester of "Programming Anal
 
 Using only HTML and JavaScript
 
-See the site here: https://favioreinaldo.github.io/ORT_Project_P1/
+See the project here: https://favioreinaldo.github.io/ORT_Project_P1/
